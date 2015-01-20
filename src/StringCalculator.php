@@ -12,10 +12,12 @@ namespace Tdd;
 class StringCalculator
 {
     private $result;
+    private $delimiter;
 
     public function __construct()
     {
         $this->result = 0;
+        $this->delimiter = ',';
     }
 
     public function add($stringNumbers)
@@ -25,11 +27,16 @@ class StringCalculator
             return $this->result;
         }
 
+        if ($this->isDelimiterChanged($stringNumbers))
+        {
+            $this->setDelimiter($this->getDelimiterFromStringNumbers($stringNumbers));
+        }
+
         $newLineParts = explode("\n", $stringNumbers);
 
         foreach ($newLineParts as $newLine)
         {
-            $stringNumberParts = explode(',', $newLine);
+            $stringNumberParts = explode($this->getDelimiter(), $newLine);
 
             $numberCount = count($stringNumberParts);
 
@@ -49,5 +56,25 @@ class StringCalculator
             }
         }
         return $this->result;
+    }
+
+    private function isDelimiterChanged($stringOfNumbers)
+    {
+
+    }
+
+    private function getDelimiterFromStringNumbers($stringOfNumbers)
+    {
+
+    }
+
+    private function setDelimiter($delimiter)
+    {
+        $this->delimiter = $delimiter;
+    }
+
+    private function getDelimiter()
+    {
+        return $this->delimiter;
     }
 }

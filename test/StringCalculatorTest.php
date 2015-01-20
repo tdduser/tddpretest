@@ -83,4 +83,31 @@ class StringCalculatorTest extends \PHPUnit_Framework_TestCase
             array("stringNumbers"=>"1,8", "expectedValue" => 9)
         );
     }
+
+    /**
+     * @dataProvider delimiterChangeDataProvider
+     *
+     * @param $stringNumbers
+     * @param $expectedValue
+     */
+    public function testDelimiterChange($stringNumbers, $expectedValue)
+    {
+        $this->assertEquals($expectedValue, $this->stringCalculator->add($stringNumbers));
+    }
+
+    /**
+     * @expectedException Exception
+     */
+    public function tesTheChangedDelimiterIsNotEqualTheDelimiterBetweenNumbers()
+    {
+        $this->stringCalculator->add("//.1;2");
+    }
+
+    public function delimiterChangeDataProvider()
+    {
+        return array(
+            array("stringNumbers"=>"//.1.4", "expectedValue" => 5),
+            array("stringNumbers"=>"//;1;8", "expectedValue" => 9)
+        );
+    }
 }

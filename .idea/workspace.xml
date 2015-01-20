@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="38c6ab37-f843-4018-aefc-d1b714916b83" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/_report/Math.php.html" afterPath="$PROJECT_DIR$/test/_report/Math.php.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/StringCalculator.php" afterPath="$PROJECT_DIR$/src/StringCalculator.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/StringCalculatorTest.php" afterPath="$PROJECT_DIR$/test/StringCalculatorTest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/_report/dashboard.html" afterPath="$PROJECT_DIR$/test/_report/dashboard.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/_report/index.html" afterPath="$PROJECT_DIR$/test/_report/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="tdd.iws" />
@@ -36,21 +33,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="StringCalculator.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="StringCalculator.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/StringCalculator.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-11.125" vertical-offset="393" max-vertical-offset="795">
-              <caret line="49" column="9" selection-start-line="49" selection-start-column="9" selection-end-line="49" selection-end-column="9" />
+            <state vertical-scroll-proportion="0.4402985" vertical-offset="723" max-vertical-offset="1200">
+              <caret line="65" column="67" selection-start-line="65" selection-start-column="67" selection-end-line="65" selection-end-column="67" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="StringCalculatorTest.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="StringCalculatorTest.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/StringCalculatorTest.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.37313432" vertical-offset="90" max-vertical-offset="1305">
-              <caret line="21" column="7" selection-start-line="21" selection-start-column="7" selection-end-line="21" selection-end-column="7" />
+            <state vertical-scroll-proportion="-2.5" vertical-offset="1170" max-vertical-offset="1710">
+              <caret line="87" column="48" selection-start-line="87" selection-start-column="48" selection-end-line="87" selection-end-column="48" />
               <folding />
             </state>
           </provider>
@@ -68,8 +65,8 @@
         <option value="$PROJECT_DIR$/src/Math.php" />
         <option value="$PROJECT_DIR$/test/MathTest.php" />
         <option value="$PROJECT_DIR$/test/Test.php" />
-        <option value="$PROJECT_DIR$/src/StringCalculator.php" />
         <option value="$PROJECT_DIR$/test/StringCalculatorTest.php" />
+        <option value="$PROJECT_DIR$/src/StringCalculator.php" />
       </list>
     </option>
   </component>
@@ -235,7 +232,13 @@
       <option name="project" value="LOCAL" />
       <updated>1421773690718</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="string calculator step 3">
+      <created>1421775685185</created>
+      <option name="number" value="00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1421775685185</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -280,7 +283,8 @@
       <TodoPanelSettings />
     </option>
     <MESSAGE value="string calculator" />
-    <option name="LAST_COMMIT_MESSAGE" value="string calculator" />
+    <MESSAGE value="string calculator step 3" />
+    <option name="LAST_COMMIT_MESSAGE" value="string calculator step 3" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -359,18 +363,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/StringCalculator.php">
+    <entry file="file://$PROJECT_DIR$/test/StringCalculatorTest.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.125" vertical-offset="393" max-vertical-offset="795">
-          <caret line="49" column="9" selection-start-line="49" selection-start-column="9" selection-end-line="49" selection-end-column="9" />
+        <state vertical-scroll-proportion="-2.5" vertical-offset="1170" max-vertical-offset="1710">
+          <caret line="87" column="48" selection-start-line="87" selection-start-column="48" selection-end-line="87" selection-end-column="48" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/StringCalculatorTest.php">
+    <entry file="file://$PROJECT_DIR$/src/StringCalculator.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.37313432" vertical-offset="90" max-vertical-offset="1305">
-          <caret line="21" column="7" selection-start-line="21" selection-start-column="7" selection-end-line="21" selection-end-column="7" />
+        <state vertical-scroll-proportion="0.4402985" vertical-offset="723" max-vertical-offset="1200">
+          <caret line="65" column="67" selection-start-line="65" selection-start-column="67" selection-end-line="65" selection-end-column="67" />
           <folding />
         </state>
       </provider>
