@@ -19,6 +19,22 @@ class StringCalculatorTest extends \PHPUnit_Framework_TestCase
         $this->stringCalculator = new StringCalculator();
     }
 
+    /**
+     * @dataProvider newLinesDataProvider
+     */
+    public function testNewLines($stringNumbers, $expectedValue)
+    {
+        $this->assertEquals($expectedValue, $this->stringCalculator->add($stringNumbers));
+    }
+
+    public function newLinesDataProvider()
+    {
+        return array(
+            array("stringNumbers"=>"4\n1,4", "expectedValue" => 9),
+            array("stringNumbers"=>"1,8\n5", "expectedValue" => 14)
+        );
+    }
+
     public function testEmptyString()
     {
         $this->assertEquals(0, $this->stringCalculator->add(""));

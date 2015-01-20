@@ -11,31 +11,43 @@ namespace Tdd;
 
 class StringCalculator
 {
+    private $result;
+
+    public function __construct()
+    {
+        $this->result = 0;
+    }
+
     public function add($stringNumbers)
     {
         if(empty($stringNumbers))
         {
-            return 0;
+            return $this->result;
         }
 
-        $stringNumberParts = explode(',', $stringNumbers);
+        $newLineParts = explode("\n", $stringNumbers);
 
-        $numberCount = count($stringNumberParts);
-
-        if ($numberCount > 2)
+        foreach ($newLineParts as $newLine)
         {
-            throw new \InvalidArgumentException("Invalid argument count: " . $numberCount);
-        }
+            $stringNumberParts = explode(',', $newLine);
 
-        if ($numberCount === 1)
-        {
-            return (int)$stringNumbers;
-        }
+            $numberCount = count($stringNumberParts);
 
-        if ($numberCount === 2)
-        {
-            return ((int)$stringNumberParts[0] + (int)$stringNumberParts[1]);
-        }
+            if ($numberCount > 2)
+            {
+                throw new \InvalidArgumentException("Invalid argument count: " . $numberCount);
+            }
 
+            if ($numberCount === 1)
+            {
+                $this->result+= ((int)$stringNumberParts[0]);
+            }
+
+            if ($numberCount === 2)
+            {
+                $this->result+= ((int)$stringNumberParts[0] + (int)$stringNumberParts[1]);
+            }
+        }
+        return $this->result;
     }
 }
